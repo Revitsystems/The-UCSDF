@@ -957,6 +957,10 @@ header.main-header .header-sticky.active {
 /***  05. Scrolling Ticker css    ***/
 /************************************/
 
+.our-scrolling-partenr {
+  background-color: #ffb22c;
+}
+
 .our-scrolling-ticker {
   background-color: #ffb22c;
   padding: 30px 0;

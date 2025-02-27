@@ -373,6 +373,14 @@ body {
   margin-bottom: 60px;
 }
 
+/*************************************/
+/* Unyo style for back ground image */
+/*************************************/
+
+.Unyo-text-style-background-white {
+  background-color: white;
+}
+
 .section-row .section-title {
   width: 100%;
   max-width: 720px;
@@ -928,7 +936,7 @@ header.main-header .header-sticky.active {
 }
 
 .down-arrow a:hover {
-  border-color: var(--accent-color);
+  border-color: #ffb22c;
 }
 
 .down-arrow a i {
@@ -938,7 +946,7 @@ header.main-header .header-sticky.active {
 }
 
 .down-arrow a:hover i {
-  color: var(--accent-color);
+  color: #ffb22c;
 }
 
 @keyframes jumpInfinite {
@@ -1563,6 +1571,7 @@ header.main-header .header-sticky.active {
 .img-150 {
   margin-left: 100px;
   max-width: 100px;
+  height: 40px;
   height: auto; /* Keeps aspect ratio */
 }
 /* 
@@ -4543,7 +4552,7 @@ header.main-header .header-sticky.active {
 }
 
 .contact-us-form {
-  background-color: var(--secondary-color);
+  background-color: #ffb22c68;
   border-radius: 0 0 100px 0;
   padding: 50px;
 }

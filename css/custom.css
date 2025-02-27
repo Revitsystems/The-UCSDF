@@ -443,7 +443,7 @@ body {
 }
 
 .help-block.with-errors ul li {
-  color: var(--error-color);
+  color: #ffb22c;
   font-weight: 500;
   font-size: 14px;
 }
@@ -2283,7 +2283,8 @@ header.main-header .header-sticky.active {
 
 .subscribe-newsletter {
   position: relative;
-  background: url("../images/subscribe-newsletter-bg.jpg") no-repeat;
+  background: url("https://github.com/Revitsystems/The-UCSDF/blob/main/images/HEALTH/RHESUS%20FACTOR%20AWARENESS%20AND%20SCREENING/WhatsApp%20Image%202024-10-22%20at%2013.25.39_2b2d1edb.jpg?raw=true")
+    no-repeat;
   background-position: center center;
   background-size: cover;
   padding: 100px 0;

@@ -1214,6 +1214,27 @@ header.main-header .header-sticky.active {
 /***  The Style for the Custom core value   ****{****/
 /***************************************************/
 
+/***************************************************/
+/***  The Style for the Custom Program  ************/
+/***************************************************/
+
+.the-image-holders {
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 50px;
+  border: 2px solid orange;
+}
+
+.img-holder-image {
+  width: 100%;
+  height: 100%;
+}
+
+/***************************************************/
+/***  The Style for the Custom Program  ************/
+/***************************************************/
+
 .worship-item {
   display: flex;
   align-items: center;
@@ -1402,6 +1423,7 @@ header.main-header .header-sticky.active {
 .our-services {
   /* background-color: ; */
   padding: 100px 0 70px;
+  background: linear-gradient(180deg, var(--white-color) 32%, #cba35c 68%);
 }
 
 .service-item {

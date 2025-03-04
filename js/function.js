@@ -293,6 +293,7 @@
 
       // Get form data
       const formData = {
+        source: document.getElementById("formSource").value, // Hidden input field value
         fname: document.getElementById("fname").value,
         lname: document.getElementById("lname").value,
         email: document.getElementById("email").value,
@@ -303,7 +304,7 @@
       try {
         // Make the POST request using Axios
         const response = await axios.post(
-          "http://localhost:5000/submit-form",
+          "https://the-ucsdf.onrender.com/submit-form", // Use the Render URL here
           formData,
           {
             headers: {

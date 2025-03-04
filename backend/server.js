@@ -4,7 +4,7 @@ import bodyParser from "body-parser";
 import nodemailer from "nodemailer";
 import dotenv from "dotenv";
 
-// Load environment variables (optional but recommended)
+// Load environment variables
 dotenv.config();
 
 const app = express();
@@ -24,10 +24,10 @@ const transporter = nodemailer.createTransport({
 
 // Handle form submission
 app.post("/submit-form", async (req, res) => {
-  const { fname, lname, email, phone, msg } = req.body;
+  const { source, fname, lname, email, phone, msg } = req.body;
 
   // Validate input
-  if (!fname || !lname || !email || !phone || !msg) {
+  if (!source || !fname || !lname || !email || !phone || !msg) {
     return res.status(400).json({ message: "All fields are required!" });
   }
 
@@ -37,8 +37,9 @@ app.post("/submit-form", async (req, res) => {
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: "recipient@gmail.com", // Replace with the recipient's email
-    subject: "New Contact Form Submission",
+    subject: `New ${source} Form Submission`, // Dynamically include the form source
     text: `
+      Source: ${source}
       Name: ${fname} ${lname}
       Email: ${email}
       Phone: ${phone}

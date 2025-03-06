@@ -36,7 +36,7 @@ app.post("/submit-form", async (req, res) => {
   // Email content
   const mailOptions = {
     from: process.env.EMAIL_USER,
-    to: "recipient@gmail.com", // Replace with the recipient's email
+    to: "unyocenterforsustainabledevelo@gmail.com", // Replace with the recipient's email
     subject: `New ${source} Form Submission`, // Dynamically include the form source
     text: `
       Source: ${source}
